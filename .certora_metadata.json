@@ -1,0 +1,28 @@
+{
+    "CLI_version": "7.6.3",
+    "branch": "",
+    "certora_ci_client": null,
+    "conf": {
+        "files": [
+            "ERC4626.sol"
+        ],
+        "process": "emv",
+        "solc": "solc-windows.exe",
+        "verify": "ERC4626:ERC4626.spec"
+    },
+    "conf_path": null,
+    "cwd_relative": "D:\\OneDrive\\Documents\\solidity-chat",
+    "dirty": true,
+    "main_spec": null,
+    "origin": "",
+    "raw_args": [
+        "C:\\Users\\ricar\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\certoraRun",
+        "ERC4626.sol",
+        "--verify",
+        "ERC4626:ERC4626.spec",
+        "--solc",
+        "solc-windows.exe"
+    ],
+    "revision": "",
+    "timestamp": "1718933014.495274"
+}

@@ -1,0 +1,8 @@
+{
+    "importFilesToOrigRelpaths": {},
+    "primary_contract": "ERC4626",
+    "specfile": "D:/OneDrive/Documents/solidity-chat/ERC4626.spec",
+    "specfileOrigRelpath": "ERC4626.spec",
+    "specfilesToImportDecls": {},
+    "type": "spec"
+}
