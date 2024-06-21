@@ -3,6 +3,7 @@
     "branch": "",
     "certora_ci_client": null,
     "conf": {
+        "debug": true,
         "files": [
             "ERC4626.sol"
         ],
@@ -21,8 +22,9 @@
         "--verify",
         "ERC4626:ERC4626.spec",
         "--solc",
-        "solc-windows.exe"
+        "solc-windows.exe",
+        "--debug"
     ],
     "revision": "",
-    "timestamp": "1718933014.495274"
+    "timestamp": "1718942934.728547"
 }
