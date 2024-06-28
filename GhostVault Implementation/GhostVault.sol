@@ -8,7 +8,7 @@ import {IPoolAddressesProvider} from "./IPoolAddressesProvider.sol";
 import {IPriceOracle} from "./IPriceOracle.sol";
 import {IERC4626} from "./IERC4626.sol";
 import {ERC4626} from "./ERC4626.sol";
-import {ERC20} from "../ERC20.sol";
+import {ERC20} from "./Interfaces/ERC20.sol";
 
 /**
  * @title GhostVault Contract
@@ -79,8 +79,10 @@ contract GhostVault is ERC4626 {
     ) public virtual override returns (uint256 shares) {
         shares = previewWithdraw(assets);
         if (msg.sender != owner) {
-            uint256 allowed = allowance[owner][msg.sender];
-            if (allowed != type(uint256).max) allowance[owner][msg.sender] = allowed - shares;
+            uint256 allowed = allowance(owner,msg.sender);
+            if (allowed != type(uint256).max) {
+                _approve(owner,msg.sender, allowed - shares);
+            }
         }
         beforeWithdraw(assets,
         shares);

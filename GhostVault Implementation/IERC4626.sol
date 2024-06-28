@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 pragma solidity ^0.8.12;
 
-import "../IERC20.sol";
+import "./Interfaces/IERC20.sol";
 
 interface IERC4626 is IERC20 {
     /*//////////////////////////////////////////////////////////////
