@@ -1,82 +1,109 @@
-///Sure, here's an example of a .spec file for the ERC4626 contract using Certora Verification Language (CVL). This example checks some basic properties of the contract and functions:
-
-//```solidity
 methods {
-    function balanceOf(address)         external returns(uint) envfree;
-    function allowance(address,address) external returns(uint) envfree;
-    function totalSupply()              external returns(uint) envfree;
-    function decimals()                 external returns(uint) envfree;
-    function totalAssets()              external returns(uint) envfree;
-    function convertToShares(uint)      external returns(uint) envfree;
-    function convertToAssets(uint)      external returns(uint) envfree;
-    function maxDeposit(address)        external returns(uint) envfree;
-    function maxMint(address)           external returns(uint) envfree;
-    function maxWithdraw(address)      external returns(uint) envfree;
-    function maxRedeem(address)         external returns(uint) envfree;
-    function deposit(uint,address)      external returns(uint) envfree;
-    function mint(uint,address)        external returns(uint) envfree;
-    function withdraw(uint,address,address) external returns(uint) envfree;
-    function redeem(uint,address,address) external returns(uint) envfree;
-    function _convertToShares(uint,Math.Rounding) external returns(uint) envfree;
-    function _convertToAssets(uint,Math.Rounding) external returns(uint) envfree;
-    function _decimalsOffset()          external returns(uint) envfree;
+    // Assuming you have defined your Solidity contract with ERC4626 methods
+    function deposit(uint256 assets, address receiver) external returns(uint256);
+    function mint(uint256 shares, address receiver) external returns(uint256);
+    function withdraw(uint256 assets, address receiver, address owner) external returns(uint256);
+    function redeem(uint256 shares, address receiver, address owner) external returns(uint256);
 }
-
 
 //// ## Part 1: Basic Rules ////////////////////////////////////////////////////
 
-// Deposit should update balance of receiver
+/// Deposit must increase the total supply and the sender's balance after the deposit
 rule depositSpec {
-    address caller; address receiver; uint assets;
-    env e;
-    require e.msg.sender == caller;
+    address caller; address receiver; uint256 assets; uint256 expectedShares;
     
-    uint shares_before = balanceOf(receiver);
-    uint totalAssets_before = totalAssets();
-
-    deposit(e, assets, receiver);
-
-    uint shares_after = balanceOf(receiver);
-    uint totalAssets_after = totalAssets();
-
-    assert shares_after == shares_before + assets, "deposit must update receiver balance by assets";
-    assert totalAssets_after == totalAssets_before + assets, "deposit must update totalAssets by assets";
-}
-
-// Deposit should revert if maxDeposit exceeded
-rule depositReverts {
-    env e; address receiver; uint assets;
-    require maxDeposit(receiver) < assets;
-
-    deposit@withrevert(e, assets, receiver);
-
-    assert lastReverted, "deposit(assets, receiver) must revert if amount exceeds maxDeposit";
-}
-
-// Withdraw should update balance of owner
-rule withdrawSpec {
-    address caller; address owner; uint assets;
     env e;
     require e.msg.sender == caller;
 
-    uint shares_before = balanceOf(owner);
-    uint totalAssets_before = totalAssets();
+    uint256 beforeSupply = totalSupply();
+    uint256 beforeBalanceSender = balanceOf(caller);
+    uint256 beforeBalanceReceiver = balanceOf(receiver);
 
-    withdraw(e, assets, owner, owner);
+    expectedShares = convertToShares(assets);
+    deposit(assets, receiver);
 
-    uint shares_after = balanceOf(owner);
-    uint totalAssets_after = totalAssets();
+    uint256 afterSupply = totalSupply();
+    uint256 afterBalanceSender = balanceOf(caller);
+    uint256 afterBalanceReceiver = balanceOf(receiver);
 
-    assert shares_after == shares_before - assets, "withdraw must update owner balance by -assets";
-    assert totalAssets_after == totalAssets_before - assets, "withdraw must update totalAssets by -assets";
+    assert afterSupply == beforeSupply + expectedShares,
+        "deposit should increase the total supply";
+    assert afterBalanceSender == beforeBalanceSender - assets,
+        "deposit should decrease the sender's balance by the deposited assets";
+    assert afterBalanceReceiver == beforeBalanceReceiver + expectedShares,
+        "deposit should increase the recipient's balance by the corresponding shares";
 }
 
-// Withdraw should revert if maxWithdraw exceeded
-rule withdrawReverts {
-    env e; address owner; uint assets;
-    require maxWithdraw(owner) < assets;
+/// Withdraw must decrease the total supply and the sender's balance after the withdrawal
+rule withdrawalSpec {
+    address owner; address recipient; uint256 assets; uint256 expectedShares;
 
-    withdraw@withrevert(e, assets, owner, owner);
+    env e;
+    require e.msg.sender == owner;
 
-    assert lastReverted, "withdraw(assets, owner, owner) must revert if amount exceeds maxWithdraw";
+    uint256 beforeSupply = totalSupply();
+    uint256 beforeBalanceOwner = balanceOf(owner);
+    uint256 beforeBalanceRecipient = balanceOf(recipient);
+
+    expectedShares = convertToShares(assets);
+    withdraw(assets, recipient, owner);
+
+    uint256 afterSupply = totalSupply();
+    uint256 afterBalanceOwner = balanceOf(owner);
+    uint256 afterBalanceRecipient = balanceOf(recipient);
+
+    assert afterSupply == beforeSupply - expectedShares,
+        "withdrawal should decrease the total supply";
+    assert afterBalanceOwner == beforeBalanceOwner - assets,
+        "withdrawal should decrease the sender's balance by the withdrawn assets";
+    assert afterBalanceRecipient == beforeBalanceRecipient + assets,
+        "withdrawal should increase the recipient's balance by the withdrawn assets";
+}
+
+/// Redemption must decrease the total supply and the sender's balance after the redemption
+rule redemptionSpec {
+    address owner; address recipient; uint256 shares; uint256 expectedAssets;
+
+    env e;
+    require e.msg.sender == owner;
+
+    uint256 beforeSupply = totalSupply();
+    uint256 beforeBalanceOwner = balanceOf(owner);
+    uint256 beforeBalanceRecipient = balanceOf(recipient);
+
+    expectedAssets = convertToAssets(shares);
+    redeem(shares, recipient, owner);
+
+    uint256 afterSupply = totalSupply();
+    uint256 afterBalanceOwner = balanceOf(owner);
+    uint256 afterBalanceRecipient = balanceOf(recipient);
+
+    assert afterSupply == beforeSupply - shares,
+        "redemption should decrease the total supply";
+    assert afterBalanceOwner == beforeBalanceOwner - shares,
+        "redemption should decrease the sender's balance by the redeemed shares";
+    assert afterBalanceRecipient == beforeBalanceRecipient + expectedAssets,
+        "redemption should increase the recipient's balance by the corresponding assets";
+}
+
+/// Withdrawal must revert if the user doesn't have enough assets
+rule withdrawalRevertsOnInsufficientAssets {
+    env e; address owner; uint256 assets;
+
+    require balanceOf(owner) < assets;
+
+    withdraw(assets, e.msg.sender, owner);
+    assert lastReverted,
+        "withdrawal must revert if the user doesn't have enough assets";
+}
+
+/// Redemption must revert if the user doesn't have enough shares
+rule redemptionRevertsOnInsufficientShares {
+    env e; address owner; uint256 shares;
+
+    require balanceOf(owner) < shares;
+
+    redeem(shares, e.msg.sender, owner);
+    assert lastReverted,
+        "redemption must revert if the user doesn't have enough shares";
 }

@@ -1,0 +1,8 @@
+{
+    "importFilesToOrigRelpaths": {},
+    "primary_contract": "GhostVault",
+    "specfile": "D:/OneDrive/Documents/solidity-chat/ERC4626.spec",
+    "specfileOrigRelpath": "../ERC4626.spec",
+    "specfilesToImportDecls": {},
+    "type": "spec"
+}

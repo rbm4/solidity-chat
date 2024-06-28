@@ -5,26 +5,26 @@
     "conf": {
         "debug": true,
         "files": [
-            "ERC4626.sol"
+            "GhostVault.sol"
         ],
         "process": "emv",
-        "solc": "solc-windows.exe",
-        "verify": "ERC4626:ERC4626.spec"
+        "solc": "../solc-windows.exe",
+        "verify": "GhostVault:../ERC4626.spec"
     },
     "conf_path": null,
-    "cwd_relative": "D:\\OneDrive\\Documents\\solidity-chat",
+    "cwd_relative": "D:\\OneDrive\\Documents\\solidity-chat\\GhostVault Implementation",
     "dirty": true,
     "main_spec": null,
     "origin": "",
     "raw_args": [
         "C:\\Users\\ricar\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\certoraRun",
-        "ERC4626.sol",
+        "GhostVault.sol",
         "--verify",
-        "ERC4626:ERC4626.spec",
+        "GhostVault:../ERC4626.spec",
         "--solc",
-        "solc-windows.exe",
+        "../solc-windows.exe",
         "--debug"
     ],
     "revision": "",
-    "timestamp": "1718950631.604796"
+    "timestamp": "1719467521.316806"
 }

@@ -1,0 +1,66 @@
+Saving last configuration file to run.conf
+There is no TAC file. Going to script EVMVerifier\certoraBuild.py to main_with_args()
+Creating dir D:/OneDrive/Documents/solidity-chat/GhostVault Implementation/.certora_config
+In D:\OneDrive\Documents\solidity-chat\ERC4626.spec, found the imports: []
+copying spec file D:/OneDrive/Documents/solidity-chat/ERC4626.spec to D:/OneDrive/Documents/solidity-chat/GhostVault Implementation/.certora_sources/.0_ERC4626.spec.spec
+writing D:/OneDrive/Documents/solidity-chat/GhostVault Implementation/.certora_verify.json
+Path to typechecker is C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_jars\Typechecker.jar
+running ['java', '-jar', 'C:\\Users\\ricar\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\certora_jars\\Typechecker.jar', '-buildDirectory', '"D:\\OneDrive\\Documents\\solidity-chat\\GhostVault', 'Implementation"']
+Failed to compile spec files:
+java.nio.file.InvalidPathException: Illegal char <"> at index 0: "D:\OneDrive\Documents\solidity-chat\GhostVault
+java.nio.file.InvalidPathException: Illegal char <"> at index 0: "D:\OneDrive\Documents\solidity-chat\GhostVault
+	at java.base/sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:182)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77)
+	at java.base/sun.nio.fs.WindowsPath.parse(WindowsPath.java:92)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:229)
+	at java.base/java.nio.file.Path.of(Path.java:147)
+	at java.base/java.nio.file.Paths.get(Paths.java:69)
+	at config.SharedConfig.prependInternalDir(Config.kt:111)
+	at preprocessing.ProverInputPreprocessor._main(ProverInputPreprocessor.kt:185)
+	at EntryPointKt.main(EntryPoint.kt:9)
+build failed
+Failure traceback: 
+Traceback (most recent call last):
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\certoraRun.py", line 145, in run_certora
+    build(context, ignore_spec_syntax_check=is_library)
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\EVMVerifier\certoraBuild.py", line 3612, in build
+    raise e
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\EVMVerifier\certoraBuild.py", line 3575, in build
+    raise Util.CertoraUserInputError("CVL specification syntax check failed")
+CertoraUserInputError: CVL specification syntax check failed
+Encountered an error running Certora Prover:
+CVL specification syntax check failed
+Saving last configuration file to run.conf
+There is no TAC file. Going to script EVMVerifier\certoraBuild.py to main_with_args()
+Creating dir D:/OneDrive/Documents/solidity-chat/GhostVault Implementation/.certora_config
+In D:\OneDrive\Documents\solidity-chat\ERC4626.spec, found the imports: []
+copying spec file D:/OneDrive/Documents/solidity-chat/ERC4626.spec to D:/OneDrive/Documents/solidity-chat/GhostVault Implementation/.certora_sources/.0_ERC4626.spec.spec
+writing D:/OneDrive/Documents/solidity-chat/GhostVault Implementation/.certora_verify.json
+Path to typechecker is C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_jars\Typechecker.jar
+running ['java', '-jar', 'C:\\Users\\ricar\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\certora_jars\\Typechecker.jar', '-buildDirectory', '"D:\\OneDrive\\Documents\\solidity-chat\\GhostVault', 'Implementation"']
+Failed to compile spec files:
+java.nio.file.InvalidPathException: Illegal char <"> at index 0: "D:\OneDrive\Documents\solidity-chat\GhostVault
+java.nio.file.InvalidPathException: Illegal char <"> at index 0: "D:\OneDrive\Documents\solidity-chat\GhostVault
+	at java.base/sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:182)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77)
+	at java.base/sun.nio.fs.WindowsPath.parse(WindowsPath.java:92)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:229)
+	at java.base/java.nio.file.Path.of(Path.java:147)
+	at java.base/java.nio.file.Paths.get(Paths.java:69)
+	at config.SharedConfig.prependInternalDir(Config.kt:111)
+	at preprocessing.ProverInputPreprocessor._main(ProverInputPreprocessor.kt:185)
+	at EntryPointKt.main(EntryPoint.kt:9)
+build failed
+Failure traceback: 
+Traceback (most recent call last):
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\certoraRun.py", line 145, in run_certora
+    build(context, ignore_spec_syntax_check=is_library)
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\EVMVerifier\certoraBuild.py", line 3612, in build
+    raise e
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\EVMVerifier\certoraBuild.py", line 3575, in build
+    raise Util.CertoraUserInputError("CVL specification syntax check failed")
+CertoraUserInputError: CVL specification syntax check failed
+Encountered an error running Certora Prover:
+CVL specification syntax check failed

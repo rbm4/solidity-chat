@@ -1,76 +1,4 @@
 Saving last configuration file to run.conf
-Saving last configuration file to run.conf
-There is no TAC file. Going to script EVMVerifier\certoraBuild.py to main_with_args()
-Creating dir D:/OneDrive/Documents/solidity-chat/.certora_config
-In D:\OneDrive\Documents\solidity-chat\ERC4626.spec, found the imports: []
-copying spec file D:/OneDrive/Documents/solidity-chat/ERC4626.spec to D:/OneDrive/Documents/solidity-chat/.certora_sources/.0_ERC4626.spec.spec
-writing D:/OneDrive/Documents/solidity-chat/.certora_verify.json
-
-building file ERC4626.sol
-Running cmd solc-windows.exe --version
-stdout, stderr = .certora_config\version_check_solc-windows.exe.stdout, .certora_config\version_check_solc-windows.exe.stderr
-Exitcode 0
-Solc run solc-windows.exe --version time: 0.05
-Running cmd solc-windows.exe -o ".certora_config\ERC4626.sol_0/" --overwrite --allow-paths ".",. --standard-json
-stdout, stderr = .certora_config\ERC4626.sol_0.standard.json.stdout, .certora_config\ERC4626.sol_0.standard.json.stderr
-Exitcode 0
-Solc run solc-windows.exe -o ".certora_config\ERC4626.sol_0/" --overwrite --allow-paths ".",. --standard-json time: 0.1544
-reading standard json data from .certora_config\ERC4626.sol_0.standard.json.stdout
-collecting worklist for D:/OneDrive/Documents/solidity-chat/ERC4626.sol
-Processing dependencies from file D:\OneDrive\Documents\solidity-chat\ERC4626.sol
-available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
-Adding a base contract link ref D:\OneDrive\Documents\solidity-chat\Context.sol to worklist
-Adding a base contract link ref D:\OneDrive\Documents\solidity-chat\ERC20.sol to worklist
-Adding a base contract link ref D:\OneDrive\Documents\solidity-chat\IERC20.sol to worklist
-Adding a base contract link ref D:\OneDrive\Documents\solidity-chat\IERC20Metadata.sol to worklist
-Adding a base contract link ref D:\OneDrive\Documents\solidity-chat\IERC4626.sol to worklist
-Adding a base contract link ref D:\OneDrive\Documents\solidity-chat\draft-IERC6093.sol to worklist
-Adding internal link ref D:\OneDrive\Documents\solidity-chat\Math.sol to worklist
-Adding internal link ref D:\OneDrive\Documents\solidity-chat\SafeERC20.sol to worklist
-Processing dependencies from file D:\OneDrive\Documents\solidity-chat\SafeERC20.sol
-available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
-Adding internal link ref D:\OneDrive\Documents\solidity-chat\Address.sol to worklist
-Adding internal link ref D:\OneDrive\Documents\solidity-chat\IERC1363.sol to worklist
-Processing dependencies from file D:\OneDrive\Documents\solidity-chat\IERC1363.sol
-available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
-Adding a base contract link ref D:\OneDrive\Documents\solidity-chat\IERC165.sol to worklist
-Processing dependencies from file D:\OneDrive\Documents\solidity-chat\IERC165.sol
-available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
-Processing dependencies from file D:\OneDrive\Documents\solidity-chat\Address.sol
-available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
-Adding internal link ref D:\OneDrive\Documents\solidity-chat\Errors.sol to worklist
-Processing dependencies from file D:\OneDrive\Documents\solidity-chat\Errors.sol
-available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
-Processing dependencies from file D:\OneDrive\Documents\solidity-chat\Math.sol
-available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
-Adding internal link ref D:\OneDrive\Documents\solidity-chat\Panic.sol to worklist
-Adding internal link ref D:\OneDrive\Documents\solidity-chat\SafeCast.sol to worklist
-Processing dependencies from file D:\OneDrive\Documents\solidity-chat\SafeCast.sol
-available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
-Processing dependencies from file D:\OneDrive\Documents\solidity-chat\Panic.sol
-available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
-Processing dependencies from file D:\OneDrive\Documents\solidity-chat\draft-IERC6093.sol
-available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
-Processing dependencies from file D:\OneDrive\Documents\solidity-chat\IERC4626.sol
-available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
-Processing dependencies from file D:\OneDrive\Documents\solidity-chat\IERC20Metadata.sol
-available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
-Processing dependencies from file D:\OneDrive\Documents\solidity-chat\IERC20.sol
-available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
-Processing dependencies from file D:\OneDrive\Documents\solidity-chat\ERC20.sol
-available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
-Processing dependencies from file D:\OneDrive\Documents\solidity-chat\Context.sol
-available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
-Contracts in ERC4626.sol_0 (file ERC4626.sol): ['ERC4626']
-Contracts with their chosen addresses: [(274184521717934524641157099916833587200, 'Address.sol:Address'), (274184521717934524641157099916833587201, 'Context.sol:Context'), (274184521717934524641157099916833587202, 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol:ERC4626'), (274184521717934524641157099916833587203, 'ERC20.sol:ERC20'), (274184521717934524641157099916833587204, 'Errors.sol:Errors'), (274184521717934524641157099916833587205, 'IERC1363.sol:IERC1363'), (274184521717934524641157099916833587206, 'IERC165.sol:IERC165'), (274184521717934524641157099916833587207, 'IERC20.sol:IERC20'), (274184521717934524641157099916833587208, 'IERC20Metadata.sol:IERC20Metadata'), (274184521717934524641157099916833587209, 'IERC4626.sol:IERC4626'), (274184521717934524641157099916833587210, 'Math.sol:Math'), (274184521717934524641157099916833587211, 'Panic.sol:Panic'), (274184521717934524641157099916833587212, 'SafeCast.sol:SafeCast'), (274184521717934524641157099916833587213, 'SafeERC20.sol:SafeERC20'), (274184521717934524641157099916833587214, 'draft-IERC6093.sol:IERC1155Errors'), (274184521717934524641157099916833587215, 'draft-IERC6093.sol:IERC20Errors'), (274184521717934524641157099916833587216, 'draft-IERC6093.sol:IERC721Errors')]
-Working on contract Address
-Working on contract Address
-build failed
-Failure traceback: 
-ValueError: too many values to unpack (expected 2)
-Encountered an error running Certora Prover, please contact Certora; consider running the script again with --debug to find out why it failed
-Saving last configuration file to run.conf
-Saving last configuration file to run.conf
 There is no TAC file. Going to script EVMVerifier\certoraBuild.py to main_with_args()
 Creating dir D:/OneDrive/Documents/solidity-chat/.certora_config
 In D:\OneDrive\Documents\solidity-chat\ERC4626.spec, found the imports: []
@@ -83,83 +11,11 @@ building file ERC4626.sol
 Running cmd solc-windows.exe --version
 stdout, stderr = .certora_config\version_check_solc-windows.exe.stdout, .certora_config\version_check_solc-windows.exe.stderr
 Exitcode 0
-Solc run solc-windows.exe --version time: 0.0133
+Solc run solc-windows.exe --version time: 0.0122
 Running cmd solc-windows.exe -o ".certora_config\ERC4626.sol_0/" --overwrite --allow-paths ".",. --standard-json
 stdout, stderr = .certora_config\ERC4626.sol_0.standard.json.stdout, .certora_config\ERC4626.sol_0.standard.json.stderr
 Exitcode 0
-Solc run solc-windows.exe -o ".certora_config\ERC4626.sol_0/" --overwrite --allow-paths ".",. --standard-json time: 0.1637
-reading standard json data from .certora_config\ERC4626.sol_0.standard.json.stdout
-collecting worklist for D:/OneDrive/Documents/solidity-chat/ERC4626.sol
-Processing dependencies from file D:\OneDrive\Documents\solidity-chat\ERC4626.sol
-available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
-Adding a base contract link ref D:\OneDrive\Documents\solidity-chat\Context.sol to worklist
-Adding a base contract link ref D:\OneDrive\Documents\solidity-chat\ERC20.sol to worklist
-Adding a base contract link ref D:\OneDrive\Documents\solidity-chat\IERC20.sol to worklist
-Adding a base contract link ref D:\OneDrive\Documents\solidity-chat\IERC20Metadata.sol to worklist
-Adding a base contract link ref D:\OneDrive\Documents\solidity-chat\IERC4626.sol to worklist
-Adding a base contract link ref D:\OneDrive\Documents\solidity-chat\draft-IERC6093.sol to worklist
-Adding internal link ref D:\OneDrive\Documents\solidity-chat\Math.sol to worklist
-Adding internal link ref D:\OneDrive\Documents\solidity-chat\SafeERC20.sol to worklist
-Processing dependencies from file D:\OneDrive\Documents\solidity-chat\SafeERC20.sol
-available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
-Adding internal link ref D:\OneDrive\Documents\solidity-chat\Address.sol to worklist
-Adding internal link ref D:\OneDrive\Documents\solidity-chat\IERC1363.sol to worklist
-Processing dependencies from file D:\OneDrive\Documents\solidity-chat\IERC1363.sol
-available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
-Adding a base contract link ref D:\OneDrive\Documents\solidity-chat\IERC165.sol to worklist
-Processing dependencies from file D:\OneDrive\Documents\solidity-chat\IERC165.sol
-available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
-Processing dependencies from file D:\OneDrive\Documents\solidity-chat\Address.sol
-available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
-Adding internal link ref D:\OneDrive\Documents\solidity-chat\Errors.sol to worklist
-Processing dependencies from file D:\OneDrive\Documents\solidity-chat\Errors.sol
-available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
-Processing dependencies from file D:\OneDrive\Documents\solidity-chat\Math.sol
-available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
-Adding internal link ref D:\OneDrive\Documents\solidity-chat\Panic.sol to worklist
-Adding internal link ref D:\OneDrive\Documents\solidity-chat\SafeCast.sol to worklist
-Processing dependencies from file D:\OneDrive\Documents\solidity-chat\SafeCast.sol
-available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
-Processing dependencies from file D:\OneDrive\Documents\solidity-chat\Panic.sol
-available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
-Processing dependencies from file D:\OneDrive\Documents\solidity-chat\draft-IERC6093.sol
-available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
-Processing dependencies from file D:\OneDrive\Documents\solidity-chat\IERC4626.sol
-available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
-Processing dependencies from file D:\OneDrive\Documents\solidity-chat\IERC20Metadata.sol
-available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
-Processing dependencies from file D:\OneDrive\Documents\solidity-chat\IERC20.sol
-available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
-Processing dependencies from file D:\OneDrive\Documents\solidity-chat\ERC20.sol
-available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
-Processing dependencies from file D:\OneDrive\Documents\solidity-chat\Context.sol
-available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
-Contracts in ERC4626.sol_0 (file ERC4626.sol): ['ERC4626']
-Contracts with their chosen addresses: [(274184521717934524641157099916833587200, 'Address.sol:Address'), (274184521717934524641157099916833587201, 'Context.sol:Context'), (274184521717934524641157099916833587202, 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol:ERC4626'), (274184521717934524641157099916833587203, 'ERC20.sol:ERC20'), (274184521717934524641157099916833587204, 'Errors.sol:Errors'), (274184521717934524641157099916833587205, 'IERC1363.sol:IERC1363'), (274184521717934524641157099916833587206, 'IERC165.sol:IERC165'), (274184521717934524641157099916833587207, 'IERC20.sol:IERC20'), (274184521717934524641157099916833587208, 'IERC20Metadata.sol:IERC20Metadata'), (274184521717934524641157099916833587209, 'IERC4626.sol:IERC4626'), (274184521717934524641157099916833587210, 'Math.sol:Math'), (274184521717934524641157099916833587211, 'Panic.sol:Panic'), (274184521717934524641157099916833587212, 'SafeCast.sol:SafeCast'), (274184521717934524641157099916833587213, 'SafeERC20.sol:SafeERC20'), (274184521717934524641157099916833587214, 'draft-IERC6093.sol:IERC1155Errors'), (274184521717934524641157099916833587215, 'draft-IERC6093.sol:IERC20Errors'), (274184521717934524641157099916833587216, 'draft-IERC6093.sol:IERC721Errors')]
-Working on contract Address
-Working on contract Address
-build failed
-Failure traceback: 
-ValueError: too many values to unpack (expected 2)
-Encountered an error running Certora Prover, please contact Certora; consider running the script again with --debug to find out why it failed
-Saving last configuration file to run.conf
-There is no TAC file. Going to script EVMVerifier\certoraBuild.py to main_with_args()
-Creating dir D:/OneDrive/Documents/solidity-chat/.certora_config
-In D:\OneDrive\Documents\solidity-chat\ERC4626.spec, found the imports: []
-copying spec file D:/OneDrive/Documents/solidity-chat/ERC4626.spec to D:/OneDrive/Documents/solidity-chat/.certora_sources/.0_ERC4626.spec.spec
-writing D:/OneDrive/Documents/solidity-chat/.certora_verify.json
-Path to typechecker is C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_jars\Typechecker.jar
-running ['java', '-jar', 'C:\\Users\\ricar\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\certora_jars\\Typechecker.jar', '-buildDirectory', '"D:\\OneDrive\\Documents\\solidity-chat"']
-
-building file ERC4626.sol
-Running cmd solc-windows.exe --version
-stdout, stderr = .certora_config\version_check_solc-windows.exe.stdout, .certora_config\version_check_solc-windows.exe.stderr
-Exitcode 0
-Solc run solc-windows.exe --version time: 0.0118
-Running cmd solc-windows.exe -o ".certora_config\ERC4626.sol_0/" --overwrite --allow-paths ".",. --standard-json
-stdout, stderr = .certora_config\ERC4626.sol_0.standard.json.stdout, .certora_config\ERC4626.sol_0.standard.json.stderr
-Exitcode 0
-Solc run solc-windows.exe -o ".certora_config\ERC4626.sol_0/" --overwrite --allow-paths ".",. --standard-json time: 0.1611
+Solc run solc-windows.exe -o ".certora_config\ERC4626.sol_0/" --overwrite --allow-paths ".",. --standard-json time: 0.1597
 reading standard json data from .certora_config\ERC4626.sol_0.standard.json.stdout
 collecting worklist for D:/OneDrive/Documents/solidity-chat/ERC4626.sol
 Processing dependencies from file D:\OneDrive\Documents\solidity-chat\ERC4626.sol
@@ -241,3 +97,400 @@ Traceback (most recent call last):
     ^^^^^^^^^^^^^^^^^^
 ValueError: too many values to unpack (expected 2)
 Encountered an error running Certora Prover, please contact Certora
+Saving last configuration file to run.conf
+There is no TAC file. Going to script EVMVerifier\certoraBuild.py to main_with_args()
+Creating dir D:/OneDrive/Documents/solidity-chat/.certora_config
+In D:\OneDrive\Documents\solidity-chat\ERC4626.spec, found the imports: []
+copying spec file D:/OneDrive/Documents/solidity-chat/ERC4626.spec to D:/OneDrive/Documents/solidity-chat/.certora_sources/.0_ERC4626.spec.spec
+writing D:/OneDrive/Documents/solidity-chat/.certora_verify.json
+Path to typechecker is C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_jars\Typechecker.jar
+running ['java', '-jar', 'C:\\Users\\ricar\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\certora_jars\\Typechecker.jar', '-buildDirectory', '"D:\\OneDrive\\Documents\\solidity-chat"']
+
+building file ERC4626.sol
+Running cmd solc-windows.exe --version
+stdout, stderr = .certora_config\version_check_solc-windows.exe.stdout, .certora_config\version_check_solc-windows.exe.stderr
+Exitcode 0
+Solc run solc-windows.exe --version time: 0.012
+Running cmd solc-windows.exe -o ".certora_config\ERC4626.sol_0/" --overwrite --allow-paths ".",. --standard-json
+stdout, stderr = .certora_config\ERC4626.sol_0.standard.json.stdout, .certora_config\ERC4626.sol_0.standard.json.stderr
+Exitcode 0
+Solc run solc-windows.exe -o ".certora_config\ERC4626.sol_0/" --overwrite --allow-paths ".",. --standard-json time: 0.1594
+reading standard json data from .certora_config\ERC4626.sol_0.standard.json.stdout
+collecting worklist for D:/OneDrive/Documents/solidity-chat/ERC4626.sol
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\ERC4626.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Adding a base contract link ref D:\OneDrive\Documents\solidity-chat\Context.sol to worklist
+Adding a base contract link ref D:\OneDrive\Documents\solidity-chat\ERC20.sol to worklist
+Adding a base contract link ref D:\OneDrive\Documents\solidity-chat\IERC20.sol to worklist
+Adding a base contract link ref D:\OneDrive\Documents\solidity-chat\IERC20Metadata.sol to worklist
+Adding a base contract link ref D:\OneDrive\Documents\solidity-chat\IERC4626.sol to worklist
+Adding a base contract link ref D:\OneDrive\Documents\solidity-chat\draft-IERC6093.sol to worklist
+Adding internal link ref D:\OneDrive\Documents\solidity-chat\Math.sol to worklist
+Adding internal link ref D:\OneDrive\Documents\solidity-chat\SafeERC20.sol to worklist
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\SafeERC20.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Adding internal link ref D:\OneDrive\Documents\solidity-chat\Address.sol to worklist
+Adding internal link ref D:\OneDrive\Documents\solidity-chat\IERC1363.sol to worklist
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\IERC1363.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Adding a base contract link ref D:\OneDrive\Documents\solidity-chat\IERC165.sol to worklist
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\IERC165.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\Address.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Adding internal link ref D:\OneDrive\Documents\solidity-chat\Errors.sol to worklist
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\Errors.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\Math.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Adding internal link ref D:\OneDrive\Documents\solidity-chat\Panic.sol to worklist
+Adding internal link ref D:\OneDrive\Documents\solidity-chat\SafeCast.sol to worklist
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\SafeCast.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\Panic.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\draft-IERC6093.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\IERC4626.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\IERC20Metadata.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\IERC20.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\ERC20.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\Context.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Contracts in ERC4626.sol_0 (file ERC4626.sol): ['ERC4626']
+Contracts with their chosen addresses: [(274184521717934524641157099916833587200, 'Address.sol:Address'), (274184521717934524641157099916833587201, 'Context.sol:Context'), (274184521717934524641157099916833587202, 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol:ERC4626'), (274184521717934524641157099916833587203, 'ERC20.sol:ERC20'), (274184521717934524641157099916833587204, 'Errors.sol:Errors'), (274184521717934524641157099916833587205, 'IERC1363.sol:IERC1363'), (274184521717934524641157099916833587206, 'IERC165.sol:IERC165'), (274184521717934524641157099916833587207, 'IERC20.sol:IERC20'), (274184521717934524641157099916833587208, 'IERC20Metadata.sol:IERC20Metadata'), (274184521717934524641157099916833587209, 'IERC4626.sol:IERC4626'), (274184521717934524641157099916833587210, 'Math.sol:Math'), (274184521717934524641157099916833587211, 'Panic.sol:Panic'), (274184521717934524641157099916833587212, 'SafeCast.sol:SafeCast'), (274184521717934524641157099916833587213, 'SafeERC20.sol:SafeERC20'), (274184521717934524641157099916833587214, 'draft-IERC6093.sol:IERC1155Errors'), (274184521717934524641157099916833587215, 'draft-IERC6093.sol:IERC20Errors'), (274184521717934524641157099916833587216, 'draft-IERC6093.sol:IERC721Errors')]
+Working on contract Address
+Working on contract Address
+build failed
+Failure traceback: 
+Traceback (most recent call last):
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\certoraRun.py", line 145, in run_certora
+    build(context, ignore_spec_syntax_check=is_library)
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\EVMVerifier\certoraBuild.py", line 3601, in build
+    raise e
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\EVMVerifier\certoraBuild.py", line 3568, in build
+    cache_hit, build_cache_enabled, cached_files = build_from_cache_or_scratch(context,
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\EVMVerifier\certoraBuild.py", line 3500, in build_from_cache_or_scratch
+    cached_files = build_from_scratch(certora_build_generator,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\EVMVerifier\certoraBuild.py", line 3433, in build_from_scratch
+    certora_build_generator.build(certora_verify_generator)
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\EVMVerifier\certoraBuild.py", line 2701, in build
+    sdc_pre_finders = self.collect_for_file(build_arg_contract_file, i, compiler_lang, Path(os.getcwd()),
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\EVMVerifier\certoraBuild.py", line 2081, in collect_for_file
+    contract_in_sdc = self.get_contract_in_sdc(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\EVMVerifier\certoraBuild.py", line 2286, in get_contract_in_sdc
+    self.find_contract_address(source_code_file, contract_name, contracts_with_chosen_addresses)
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\EVMVerifier\certoraBuild.py", line 1419, in find_contract_address
+    contract_cmp(e[1], contract_file, contract_name)]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\EVMVerifier\certoraBuild.py", line 1413, in contract_cmp
+    e_file, e_contract = str(entry).split(':')
+    ^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 2)
+Encountered an error running Certora Prover, please contact Certora
+Saving last configuration file to run.conf
+There is no TAC file. Going to script EVMVerifier\certoraBuild.py to main_with_args()
+Creating dir D:/OneDrive/Documents/solidity-chat/.certora_config
+In D:\OneDrive\Documents\solidity-chat\ERC4626.spec, found the imports: []
+copying spec file D:/OneDrive/Documents/solidity-chat/ERC4626.spec to D:/OneDrive/Documents/solidity-chat/.certora_sources/.0_ERC4626.spec.spec
+writing D:/OneDrive/Documents/solidity-chat/.certora_verify.json
+Path to typechecker is C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_jars\Typechecker.jar
+running ['java', '-jar', 'C:\\Users\\ricar\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\certora_jars\\Typechecker.jar', '-buildDirectory', '"D:\\OneDrive\\Documents\\solidity-chat"']
+
+building file ERC4626.sol
+Running cmd solc-windows.exe --version
+stdout, stderr = .certora_config\version_check_solc-windows.exe.stdout, .certora_config\version_check_solc-windows.exe.stderr
+Exitcode 0
+Solc run solc-windows.exe --version time: 0.0118
+Running cmd solc-windows.exe -o ".certora_config\ERC4626.sol_0/" --overwrite --allow-paths ".",. --standard-json
+stdout, stderr = .certora_config\ERC4626.sol_0.standard.json.stdout, .certora_config\ERC4626.sol_0.standard.json.stderr
+Exitcode 0
+Solc run solc-windows.exe -o ".certora_config\ERC4626.sol_0/" --overwrite --allow-paths ".",. --standard-json time: 0.1529
+reading standard json data from .certora_config\ERC4626.sol_0.standard.json.stdout
+collecting worklist for D:/OneDrive/Documents/solidity-chat/ERC4626.sol
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\ERC4626.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Adding a base contract link ref D:\OneDrive\Documents\solidity-chat\Context.sol to worklist
+Adding a base contract link ref D:\OneDrive\Documents\solidity-chat\ERC20.sol to worklist
+Adding a base contract link ref D:\OneDrive\Documents\solidity-chat\IERC20.sol to worklist
+Adding a base contract link ref D:\OneDrive\Documents\solidity-chat\IERC20Metadata.sol to worklist
+Adding a base contract link ref D:\OneDrive\Documents\solidity-chat\IERC4626.sol to worklist
+Adding a base contract link ref D:\OneDrive\Documents\solidity-chat\draft-IERC6093.sol to worklist
+Adding internal link ref D:\OneDrive\Documents\solidity-chat\Math.sol to worklist
+Adding internal link ref D:\OneDrive\Documents\solidity-chat\SafeERC20.sol to worklist
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\SafeERC20.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Adding internal link ref D:\OneDrive\Documents\solidity-chat\Address.sol to worklist
+Adding internal link ref D:\OneDrive\Documents\solidity-chat\IERC1363.sol to worklist
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\IERC1363.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Adding a base contract link ref D:\OneDrive\Documents\solidity-chat\IERC165.sol to worklist
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\IERC165.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\Address.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Adding internal link ref D:\OneDrive\Documents\solidity-chat\Errors.sol to worklist
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\Errors.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\Math.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Adding internal link ref D:\OneDrive\Documents\solidity-chat\Panic.sol to worklist
+Adding internal link ref D:\OneDrive\Documents\solidity-chat\SafeCast.sol to worklist
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\SafeCast.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\Panic.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\draft-IERC6093.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\IERC4626.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\IERC20Metadata.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\IERC20.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\ERC20.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\Context.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Contracts in ERC4626.sol_0 (file ERC4626.sol): ['ERC4626']
+Contracts with their chosen addresses: [(274184521717934524641157099916833587200, 'Address.sol:Address'), (274184521717934524641157099916833587201, 'Context.sol:Context'), (274184521717934524641157099916833587202, 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol:ERC4626'), (274184521717934524641157099916833587203, 'ERC20.sol:ERC20'), (274184521717934524641157099916833587204, 'Errors.sol:Errors'), (274184521717934524641157099916833587205, 'IERC1363.sol:IERC1363'), (274184521717934524641157099916833587206, 'IERC165.sol:IERC165'), (274184521717934524641157099916833587207, 'IERC20.sol:IERC20'), (274184521717934524641157099916833587208, 'IERC20Metadata.sol:IERC20Metadata'), (274184521717934524641157099916833587209, 'IERC4626.sol:IERC4626'), (274184521717934524641157099916833587210, 'Math.sol:Math'), (274184521717934524641157099916833587211, 'Panic.sol:Panic'), (274184521717934524641157099916833587212, 'SafeCast.sol:SafeCast'), (274184521717934524641157099916833587213, 'SafeERC20.sol:SafeERC20'), (274184521717934524641157099916833587214, 'draft-IERC6093.sol:IERC1155Errors'), (274184521717934524641157099916833587215, 'draft-IERC6093.sol:IERC20Errors'), (274184521717934524641157099916833587216, 'draft-IERC6093.sol:IERC721Errors')]
+Working on contract Address
+Working on contract Address
+build failed
+Failure traceback: 
+Traceback (most recent call last):
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\certoraRun.py", line 145, in run_certora
+    build(context, ignore_spec_syntax_check=is_library)
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\EVMVerifier\certoraBuild.py", line 3606, in build
+    raise e
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\EVMVerifier\certoraBuild.py", line 3573, in build
+    cache_hit, build_cache_enabled, cached_files = build_from_cache_or_scratch(context,
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\EVMVerifier\certoraBuild.py", line 3505, in build_from_cache_or_scratch
+    cached_files = build_from_scratch(certora_build_generator,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\EVMVerifier\certoraBuild.py", line 3438, in build_from_scratch
+    certora_build_generator.build(certora_verify_generator)
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\EVMVerifier\certoraBuild.py", line 2706, in build
+    sdc_pre_finders = self.collect_for_file(build_arg_contract_file, i, compiler_lang, Path(os.getcwd()),
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\EVMVerifier\certoraBuild.py", line 2086, in collect_for_file
+    contract_in_sdc = self.get_contract_in_sdc(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\EVMVerifier\certoraBuild.py", line 2291, in get_contract_in_sdc
+    self.find_contract_address(source_code_file, contract_name, contracts_with_chosen_addresses)
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\EVMVerifier\certoraBuild.py", line 1424, in find_contract_address
+    contract_cmp(e[1], contract_file, contract_name)]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\EVMVerifier\certoraBuild.py", line 1416, in contract_cmp
+    e_contract = result[2]
+                 ~~~~~~^^^
+IndexError: list index out of range
+Encountered an error running Certora Prover, please contact Certora
+Saving last configuration file to run.conf
+There is no TAC file. Going to script EVMVerifier\certoraBuild.py to main_with_args()
+Creating dir D:/OneDrive/Documents/solidity-chat/.certora_config
+In D:\OneDrive\Documents\solidity-chat\ERC4626.spec, found the imports: []
+copying spec file D:/OneDrive/Documents/solidity-chat/ERC4626.spec to D:/OneDrive/Documents/solidity-chat/.certora_sources/.0_ERC4626.spec.spec
+writing D:/OneDrive/Documents/solidity-chat/.certora_verify.json
+Path to typechecker is C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_jars\Typechecker.jar
+running ['java', '-jar', 'C:\\Users\\ricar\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\certora_jars\\Typechecker.jar', '-buildDirectory', '"D:\\OneDrive\\Documents\\solidity-chat"']
+
+building file ERC4626.sol
+Running cmd solc-windows.exe --version
+stdout, stderr = .certora_config\version_check_solc-windows.exe.stdout, .certora_config\version_check_solc-windows.exe.stderr
+Exitcode 0
+Solc run solc-windows.exe --version time: 0.0132
+Running cmd solc-windows.exe -o ".certora_config\ERC4626.sol_0/" --overwrite --allow-paths ".",. --standard-json
+stdout, stderr = .certora_config\ERC4626.sol_0.standard.json.stdout, .certora_config\ERC4626.sol_0.standard.json.stderr
+Exitcode 0
+Solc run solc-windows.exe -o ".certora_config\ERC4626.sol_0/" --overwrite --allow-paths ".",. --standard-json time: 0.1611
+reading standard json data from .certora_config\ERC4626.sol_0.standard.json.stdout
+collecting worklist for D:/OneDrive/Documents/solidity-chat/ERC4626.sol
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\ERC4626.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Adding a base contract link ref D:\OneDrive\Documents\solidity-chat\Context.sol to worklist
+Adding a base contract link ref D:\OneDrive\Documents\solidity-chat\ERC20.sol to worklist
+Adding a base contract link ref D:\OneDrive\Documents\solidity-chat\IERC20.sol to worklist
+Adding a base contract link ref D:\OneDrive\Documents\solidity-chat\IERC20Metadata.sol to worklist
+Adding a base contract link ref D:\OneDrive\Documents\solidity-chat\IERC4626.sol to worklist
+Adding a base contract link ref D:\OneDrive\Documents\solidity-chat\draft-IERC6093.sol to worklist
+Adding internal link ref D:\OneDrive\Documents\solidity-chat\Math.sol to worklist
+Adding internal link ref D:\OneDrive\Documents\solidity-chat\SafeERC20.sol to worklist
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\SafeERC20.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Adding internal link ref D:\OneDrive\Documents\solidity-chat\Address.sol to worklist
+Adding internal link ref D:\OneDrive\Documents\solidity-chat\IERC1363.sol to worklist
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\IERC1363.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Adding a base contract link ref D:\OneDrive\Documents\solidity-chat\IERC165.sol to worklist
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\IERC165.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\Address.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Adding internal link ref D:\OneDrive\Documents\solidity-chat\Errors.sol to worklist
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\Errors.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\Math.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Adding internal link ref D:\OneDrive\Documents\solidity-chat\Panic.sol to worklist
+Adding internal link ref D:\OneDrive\Documents\solidity-chat\SafeCast.sol to worklist
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\SafeCast.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\Panic.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\draft-IERC6093.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\IERC4626.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\IERC20Metadata.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\IERC20.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\ERC20.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\Context.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Contracts in ERC4626.sol_0 (file ERC4626.sol): ['ERC4626']
+Contracts with their chosen addresses: [(274184521717934524641157099916833587200, 'Address.sol:Address'), (274184521717934524641157099916833587201, 'Context.sol:Context'), (274184521717934524641157099916833587202, 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol:ERC4626'), (274184521717934524641157099916833587203, 'ERC20.sol:ERC20'), (274184521717934524641157099916833587204, 'Errors.sol:Errors'), (274184521717934524641157099916833587205, 'IERC1363.sol:IERC1363'), (274184521717934524641157099916833587206, 'IERC165.sol:IERC165'), (274184521717934524641157099916833587207, 'IERC20.sol:IERC20'), (274184521717934524641157099916833587208, 'IERC20Metadata.sol:IERC20Metadata'), (274184521717934524641157099916833587209, 'IERC4626.sol:IERC4626'), (274184521717934524641157099916833587210, 'Math.sol:Math'), (274184521717934524641157099916833587211, 'Panic.sol:Panic'), (274184521717934524641157099916833587212, 'SafeCast.sol:SafeCast'), (274184521717934524641157099916833587213, 'SafeERC20.sol:SafeERC20'), (274184521717934524641157099916833587214, 'draft-IERC6093.sol:IERC1155Errors'), (274184521717934524641157099916833587215, 'draft-IERC6093.sol:IERC20Errors'), (274184521717934524641157099916833587216, 'draft-IERC6093.sol:IERC721Errors')]
+Working on contract Address
+Working on contract Address
+build failed
+Failure traceback: 
+Traceback (most recent call last):
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\certoraRun.py", line 145, in run_certora
+    build(context, ignore_spec_syntax_check=is_library)
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\EVMVerifier\certoraBuild.py", line 3607, in build
+    raise e
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\EVMVerifier\certoraBuild.py", line 3574, in build
+    cache_hit, build_cache_enabled, cached_files = build_from_cache_or_scratch(context,
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\EVMVerifier\certoraBuild.py", line 3506, in build_from_cache_or_scratch
+    cached_files = build_from_scratch(certora_build_generator,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\EVMVerifier\certoraBuild.py", line 3439, in build_from_scratch
+    certora_build_generator.build(certora_verify_generator)
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\EVMVerifier\certoraBuild.py", line 2707, in build
+    sdc_pre_finders = self.collect_for_file(build_arg_contract_file, i, compiler_lang, Path(os.getcwd()),
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\EVMVerifier\certoraBuild.py", line 2087, in collect_for_file
+    contract_in_sdc = self.get_contract_in_sdc(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\EVMVerifier\certoraBuild.py", line 2292, in get_contract_in_sdc
+    self.find_contract_address(source_code_file, contract_name, contracts_with_chosen_addresses)
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\EVMVerifier\certoraBuild.py", line 1425, in find_contract_address
+    contract_cmp(e[1], contract_file, contract_name)]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\EVMVerifier\certoraBuild.py", line 1417, in contract_cmp
+    e_contract = result[2]
+                 ~~~~~~^^^
+IndexError: list index out of range
+Encountered an error running Certora Prover, please contact Certora
+Saving last configuration file to run.conf
+There is no TAC file. Going to script EVMVerifier\certoraBuild.py to main_with_args()
+Creating dir D:/OneDrive/Documents/solidity-chat/.certora_config
+In D:\OneDrive\Documents\solidity-chat\ERC4626.spec, found the imports: []
+copying spec file D:/OneDrive/Documents/solidity-chat/ERC4626.spec to D:/OneDrive/Documents/solidity-chat/.certora_sources/.0_ERC4626.spec.spec
+writing D:/OneDrive/Documents/solidity-chat/.certora_verify.json
+Path to typechecker is C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_jars\Typechecker.jar
+running ['java', '-jar', 'C:\\Users\\ricar\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\certora_jars\\Typechecker.jar', '-buildDirectory', '"D:\\OneDrive\\Documents\\solidity-chat"']
+
+building file ERC4626.sol
+Running cmd solc-windows.exe --version
+stdout, stderr = .certora_config\version_check_solc-windows.exe.stdout, .certora_config\version_check_solc-windows.exe.stderr
+Exitcode 0
+Solc run solc-windows.exe --version time: 0.0119
+Running cmd solc-windows.exe -o ".certora_config\ERC4626.sol_0/" --overwrite --allow-paths ".",. --standard-json
+stdout, stderr = .certora_config\ERC4626.sol_0.standard.json.stdout, .certora_config\ERC4626.sol_0.standard.json.stderr
+Exitcode 0
+Solc run solc-windows.exe -o ".certora_config\ERC4626.sol_0/" --overwrite --allow-paths ".",. --standard-json time: 0.1531
+reading standard json data from .certora_config\ERC4626.sol_0.standard.json.stdout
+collecting worklist for D:/OneDrive/Documents/solidity-chat/ERC4626.sol
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\ERC4626.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Adding a base contract link ref D:\OneDrive\Documents\solidity-chat\Context.sol to worklist
+Adding a base contract link ref D:\OneDrive\Documents\solidity-chat\ERC20.sol to worklist
+Adding a base contract link ref D:\OneDrive\Documents\solidity-chat\IERC20.sol to worklist
+Adding a base contract link ref D:\OneDrive\Documents\solidity-chat\IERC20Metadata.sol to worklist
+Adding a base contract link ref D:\OneDrive\Documents\solidity-chat\IERC4626.sol to worklist
+Adding a base contract link ref D:\OneDrive\Documents\solidity-chat\draft-IERC6093.sol to worklist
+Adding internal link ref D:\OneDrive\Documents\solidity-chat\Math.sol to worklist
+Adding internal link ref D:\OneDrive\Documents\solidity-chat\SafeERC20.sol to worklist
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\SafeERC20.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Adding internal link ref D:\OneDrive\Documents\solidity-chat\Address.sol to worklist
+Adding internal link ref D:\OneDrive\Documents\solidity-chat\IERC1363.sol to worklist
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\IERC1363.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Adding a base contract link ref D:\OneDrive\Documents\solidity-chat\IERC165.sol to worklist
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\IERC165.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\Address.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Adding internal link ref D:\OneDrive\Documents\solidity-chat\Errors.sol to worklist
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\Errors.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\Math.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Adding internal link ref D:\OneDrive\Documents\solidity-chat\Panic.sol to worklist
+Adding internal link ref D:\OneDrive\Documents\solidity-chat\SafeCast.sol to worklist
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\SafeCast.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\Panic.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\draft-IERC6093.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\IERC4626.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\IERC20Metadata.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\IERC20.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\ERC20.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Processing dependencies from file D:\OneDrive\Documents\solidity-chat\Context.sol
+available keys: dict_keys(['Address.sol', 'Context.sol', 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol', 'ERC20.sol', 'Errors.sol', 'IERC1363.sol', 'IERC165.sol', 'IERC20.sol', 'IERC20Metadata.sol', 'IERC4626.sol', 'Math.sol', 'Panic.sol', 'SafeCast.sol', 'SafeERC20.sol', 'draft-IERC6093.sol'])
+Contracts in ERC4626.sol_0 (file ERC4626.sol): ['ERC4626']
+Contracts with their chosen addresses: [(274184521717934524641157099916833587200, 'Address.sol:Address'), (274184521717934524641157099916833587201, 'Context.sol:Context'), (274184521717934524641157099916833587202, 'D:/OneDrive/Documents/solidity-chat/ERC4626.sol:ERC4626'), (274184521717934524641157099916833587203, 'ERC20.sol:ERC20'), (274184521717934524641157099916833587204, 'Errors.sol:Errors'), (274184521717934524641157099916833587205, 'IERC1363.sol:IERC1363'), (274184521717934524641157099916833587206, 'IERC165.sol:IERC165'), (274184521717934524641157099916833587207, 'IERC20.sol:IERC20'), (274184521717934524641157099916833587208, 'IERC20Metadata.sol:IERC20Metadata'), (274184521717934524641157099916833587209, 'IERC4626.sol:IERC4626'), (274184521717934524641157099916833587210, 'Math.sol:Math'), (274184521717934524641157099916833587211, 'Panic.sol:Panic'), (274184521717934524641157099916833587212, 'SafeCast.sol:SafeCast'), (274184521717934524641157099916833587213, 'SafeERC20.sol:SafeERC20'), (274184521717934524641157099916833587214, 'draft-IERC6093.sol:IERC1155Errors'), (274184521717934524641157099916833587215, 'draft-IERC6093.sol:IERC20Errors'), (274184521717934524641157099916833587216, 'draft-IERC6093.sol:IERC721Errors')]
+Working on contract Address
+Working on contract Address
+Working on contract Context
+Working on contract Context
+Working on contract ERC4626
+build failed
+Failure traceback: 
+Traceback (most recent call last):
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\certoraRun.py", line 145, in run_certora
+    build(context, ignore_spec_syntax_check=is_library)
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\EVMVerifier\certoraBuild.py", line 3612, in build
+    raise e
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\EVMVerifier\certoraBuild.py", line 3579, in build
+    cache_hit, build_cache_enabled, cached_files = build_from_cache_or_scratch(context,
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\EVMVerifier\certoraBuild.py", line 3511, in build_from_cache_or_scratch
+    cached_files = build_from_scratch(certora_build_generator,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\EVMVerifier\certoraBuild.py", line 3444, in build_from_scratch
+    certora_build_generator.build(certora_verify_generator)
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\EVMVerifier\certoraBuild.py", line 2712, in build
+    sdc_pre_finders = self.collect_for_file(build_arg_contract_file, i, compiler_lang, Path(os.getcwd()),
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\EVMVerifier\certoraBuild.py", line 2092, in collect_for_file
+    contract_in_sdc = self.get_contract_in_sdc(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\EVMVerifier\certoraBuild.py", line 2287, in get_contract_in_sdc
+    deployed_bytecode = self.get_bytecode(contract_data["evm"]["deployedBytecode"], contract_name,
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\certora_cli\EVMVerifier\certoraBuild.py", line 2206, in get_bytecode
+    raise Util.CertoraUserInputError(msg)
+CertoraUserInputError: Contract ERC4626 has no bytecode. It may be caused because the contract is abstract, or is missing constructor code. Please check the output of the Solidity compiler.
+Encountered an error running Certora Prover:
+Contract ERC4626 has no bytecode. It may be caused because the contract is abstract, or is missing constructor code. Please check the output of the Solidity compiler.
